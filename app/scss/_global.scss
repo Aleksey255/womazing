@@ -1,0 +1,108 @@
+html,
+body {
+	height: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	overflow-x: hidden;
+	min-width: 300px;
+	font-size: 17px;
+	line-height: 23px;
+	color: black;
+}
+
+a {
+	color: black;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-fluid {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.breadcrumbs {
+	background: rgba(#dfdfdf, .5);
+	padding: 13px 14px;
+	position: relative;
+	z-index: 10;
+
+	&__list {
+		display: flex;
+		overflow-x: auto;
+	}
+
+	&__item {
+		position: relative;
+		padding-right: 8px;
+	}
+
+	&__item::after {
+		content: '';
+		position: absolute;
+		background-image: url(../images/dash.png);
+	}
+
+	&__item:last-child::after {
+		display: none;
+	}
+
+	&__link {
+		font-size: 14px;
+	}
+}
+
+.slick-slider {
+	max-width: 570px;
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	li {
+		margin: 0 15px;
+	}
+
+	li.slick-active {
+		button {
+			background-color: black;
+		}
+	}
+
+	button {
+		background-color: d1d1d1;
+		width: 30px;
+		height: 4px;
+		border: none;
+		padding: 0;
+		font-size: 0;
+	}
+}
