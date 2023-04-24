@@ -267,19 +267,25 @@
         gap: 30px;
         margin-bottom: 65px;
     }
-    &__grid-item{
+
+    &__grid-item {
         position: relative;
-        &:hover{
-            .new-collection__grid-hover, .new-collection__grid-arrow{
+
+        &:hover {
+
+            .new-collection__grid-hover,
+            .new-collection__grid-arrow {
                 opacity: 1;
-               
+
             }
         }
     }
-    &__grid-img{
+
+    &__grid-img {
         object-fit: cover;
     }
-    &__grid-hover{
+
+    &__grid-hover {
         width: 350px;
         height: 478px;
         background-color: rgba($default, .7);
@@ -294,7 +300,8 @@
         opacity: 0;
         transition: all, .5s;
     }
-    &__grid-arrow{
+
+    &__grid-arrow {
         position: absolute;
         top: 40%;
         right: 0;
@@ -345,5 +352,39 @@
 
     &__btn-link {
         color: $default;
+    }
+}
+
+.qualities {
+    padding-bottom: 130px;
+
+    &__title {
+        font-size: 40px;
+        line-height: 44px;
+        padding-bottom: 92px;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__flex-img {
+        width: 61px;
+        height: 61px;
+        margin-bottom: 37px;
+    }
+
+    &__flex-title {
+        font-size: 25px;
+        line-height: 35px;
+        padding-bottom: 24px;
+    }
+
+    &__flex-text {
+        font-size: 17px;
+        line-height: 24px;
+        width: 305px;
     }
 }
