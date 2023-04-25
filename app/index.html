@@ -37,8 +37,15 @@
             </li>
           </ul>
         </nav>
-        <a class="header__phone" href="tel:+74958235412">+7 (495) 823-54-12</a>
-        <img class="header__bags" src="images/bags.png" alt="bags">
+        <div class="header__flex">
+          <a class="header__phone-link" data-fancybox href="#">
+            <img class="header__phone-logo" src="images/phone.svg" alt="logo">
+          </a>
+          <a class="header__phone" href="tel:+74958235412">+7 (495) 823-54-12</a>
+        </div>
+        <a class="header__bags-link" href="#">
+          <img class="header__bags" src="images/bags.png" alt="bags">
+        </a>
       </div>
     </header>
 
@@ -60,7 +67,11 @@
                       <img src="images/arrow.png" alt="arrow">
                     </a>
                   </button>
-                  <button class="top__slider-left-shop">Открыть магазин</button>
+                  <button class="top__slider-left-shop">
+                    <a class="top__slider-left-link" href="#">
+                      Открыть магазин
+                    </a>
+                  </button>
                 </div>
               </div>
               <div class="top__slider-left-item">
@@ -73,7 +84,11 @@
                       <img src="images/arrow.png" alt="arrow">
                     </a>
                   </button>
-                  <button class="top__slider-left-shop">Открыть магазин</button>
+                  <button class="top__slider-left-shop">
+                    <a class="top__slider-left-link" href="#">
+                      Открыть магазин
+                    </a>
+                  </button>
                 </div>
               </div>
               <div class="top__slider-left-item">
@@ -157,19 +172,22 @@
       <div class="qualities__title">Что для нас важно</div>
       <div class="qualities__flex">
         <div class="qualities__flex-item">
-          <img  class="qualities__flex-img" src="images/quality-logo.png" alt="logo">
+          <img class="qualities__flex-img" src="images/quality-logo.png" alt="logo">
           <h4 class="qualities__flex-title">Качество</h4>
-          <p class="qualities__flex-text">Наши профессионалы работают на лучшем оборудовании для пошива одежды беспрецедентного качества</p>
+          <p class="qualities__flex-text">Наши профессионалы работают на лучшем оборудовании для пошива одежды
+            беспрецедентного качества</p>
         </div>
         <div class="qualities__flex-item">
-          <img  class="qualities__flex-img" src="images/speed-logo.png" alt="logo">
+          <img class="qualities__flex-img" src="images/speed-logo.png" alt="logo">
           <h4 class="qualities__flex-title">Скорость</h4>
-          <p class="qualities__flex-text">Благодаря отлаженной системе в Womazing мы можем отшивать до 20-ти единиц продукции в наших собственных цехах</p>
+          <p class="qualities__flex-text">Благодаря отлаженной системе в Womazing мы можем отшивать до 20-ти единиц
+            продукции в наших собственных цехах</p>
         </div>
         <div class="qualities__flex-item">
-          <img  class="qualities__flex-img" src="images/responsibility-logo.png" alt="logo">
+          <img class="qualities__flex-img" src="images/responsibility-logo.png" alt="logo">
           <h4 class="qualities__flex-title">Ответственность</h4>
-          <p class="qualities__flex-text">Мы заботимся о людях и планете. Безотходное производство и комфортные условия труда - все это Womazing</p>
+          <p class="qualities__flex-text">Мы заботимся о людях и планете. Безотходное производство и комфортные условия
+            труда - все это Womazing</p>
         </div>
       </div>
     </div>
@@ -177,7 +195,26 @@
 
   <section class="team">
     <div class="container">
-      
+      <div class="team__title">Команда мечты Womazing</div>
+      <div class="team__flex">
+        <div class="team__slider">
+          <div class="team__slider-item">
+            <img class="team__slider-img" src="images/content/team-slider-1.jpg" alt="images">
+          </div>
+          <div class="team__slider-item">
+            <img class="team__slider-img" src="images/content/team-slider-2.jpg" alt="images">
+          </div>
+          <div class="team__slider-item">
+            <img class="team__slider-img" src="images/content/team-slider-3.jpg" alt="images">
+          </div>
+        </div>
+        <div class="team__flex-item">
+          <h3 class="team__flex-title">Для каждой</h3>
+          <p class="team__flex-text">Каждая девушка уникальна. Однако, мы схожи в миллионе мелочей. Womazing ищет эти
+            мелочи и создает прекрасные вещи, которые выгодно подчеркивают достоинства каждой девушки.</p>
+          <a class="team__flex-link" href="#">Подробнее о бренде</a>
+        </div>
+      </div>
     </div>
   </section>
 

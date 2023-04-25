@@ -70,25 +70,25 @@
     &__menu-list-item+.header__menu-list-item {
         padding-left: 45px;
     }
-
-    &__phone {
-        padding-right: 90px;
-        position: relative;
-        @extend %font;
+    &__flex{
+        display: flex;
+    }
+    &__phone-link{
+        margin-right: 16px;
         z-index: 100;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 1px;
-            left: -30px;
-            width: 17px;
-            height: 17px;
-            background-image: url(../images/phone.png);
+        &:hover{
+            background-image: url(../images/phone-hover.svg);
+            background-repeat: no-repeat;
         }
     }
 
-    &__bags {
+    &__phone {
+        padding-right: 70px;
+        @extend %font;
+        z-index: 100;
+    }
+
+    &__bags-link {
         z-index: 100;
     }
 }
@@ -219,10 +219,17 @@
 
     &__slider-left-shop {
         background-color: $default;
-        color: #fff;
         width: 243px;
         height: 68px;
         padding: 22px 50px;
+
+        &:hover {
+            background-color: #509498;
+        }
+    }
+
+    &__slider-left-link {
+        color: #fff;
     }
 
     &__slider-right-imgSmall,
@@ -289,8 +296,6 @@
         width: 350px;
         height: 478px;
         background-color: rgba($default, .7);
-        // background-image: url(../images/hover-arrow.svg);
-        background-repeat: no-repeat;
         position: absolute;
         top: 0;
         right: 0;
@@ -348,6 +353,14 @@
         height: 68px;
         border: 1px solid $default;
         background-color: #fff;
+
+        &:hover {
+            background-color: $default;
+
+            .new-collection__btn-link {
+                color: #fff;
+            }
+        }
     }
 
     &__btn-link {
@@ -387,4 +400,40 @@
         line-height: 24px;
         width: 305px;
     }
+}
+
+.team {
+    padding-bottom: 130px;
+
+    &__title {
+        font-size: 40px;
+        line-height: 44px;
+        padding-bottom: 92px;
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__flex-title {
+        padding-bottom: 28px;
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    &__flex-text {
+        padding-bottom: 28px;
+        width: 235px;
+    }
+
+    &__flex-link {
+        color: $default;
+        &:hover {
+            border-bottom: 1px solid #CEDEDF;        
+        }
+    }
+
+
 }

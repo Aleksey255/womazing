@@ -13,5 +13,8 @@
     "node-sass": "^8.0.0",
     "sass": "^1.58.1",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7"
   }
 }

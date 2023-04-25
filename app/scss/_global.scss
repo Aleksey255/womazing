@@ -78,6 +78,39 @@ a {
 	}
 }
 
+.slider {
+	position: relative;
+	padding: 0 60px;
+}
+
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	margin: -15px 0 0 0;
+	z-index: 2;
+	font-size: 0;
+	width: 35px;
+	height: 21px;
+	border: none;
+	cursor: pointer;
+	
+}
+
+.slick-prev{
+	left: -75px;
+	background: url(../images/prev-arrow.svg) 0 0 / 100% no-repeat;
+	&:hover{
+		background-image: url(../images/prev-arrow-active.svg);
+	}
+}
+.slick-next{
+	right: -75px;
+	background: url(../images/next-arrow.svg) 0 0 / 100% no-repeat;
+	&:hover{
+		background-image: url(../images/next-arrow-active.svg);
+	}
+}
+
 .slick-slider {
 	max-width: 570px;
 }

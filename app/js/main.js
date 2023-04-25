@@ -25,11 +25,19 @@ $(function(){
 });
 
 $('.top__slider-right').slick({
-  dots: true,
+  dots: false,
   arrows: false,
   fade: true,
   asNavFor: '.top__slider-left'
 });
+
+$('.team__slider').slick({
+  dots: true,
+  arrows: true,
+  fade: true,
+});
+
+Fancybox.bind("[data-fancybox]");
 
 
 });
