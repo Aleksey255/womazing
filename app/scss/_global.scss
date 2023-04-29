@@ -48,33 +48,44 @@ a {
 }
 
 .breadcrumbs {
-	background: rgba(#dfdfdf, .5);
 	padding: 13px 14px;
 	position: relative;
 	z-index: 10;
+	margin-bottom: 214px;
+
+	&__title{
+		margin-top: 140px;
+		padding-bottom: 26px;
+		font-size: 55px;
+		line-height: 61px;
+	}
 
 	&__list {
 		display: flex;
 		overflow-x: auto;
 	}
+	
 
 	&__item {
 		position: relative;
 		padding-right: 8px;
+		margin-right: 8px;
 	}
 
 	&__item::after {
-		content: '';
+		content: '-';
 		position: absolute;
-		background-image: url(../images/dash.png);
 	}
 
 	&__item:last-child::after {
 		display: none;
 	}
+	&__link{
+		padding-right: 8px;
+	}
 
-	&__link {
-		font-size: 14px;
+	&__link--active{
+		color: #909090;
 	}
 }
 
