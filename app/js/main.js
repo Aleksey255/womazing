@@ -41,7 +41,20 @@ $(function () {
     load: {
         filter: '.all'
     }
+  });
+
 });
 
+$(document).ready(function(){
+	$('.shop-one__btn-size').click(function () {
+    $('.shop-one__btn-size').removeClass('shop-one__btn-size--active'); 
+		$(this).toggleClass('shop-one__btn-size--active');
+		});
+	});
 
-});
+$(document).ready(function(){
+	$('.shop-one__btn-color').click(function () {
+    $('.shop-one__btn-color').removeClass('shop-one__btn-color--active'); 
+		$(this).toggleClass('shop-one__btn-color--active');
+		});
+	});
