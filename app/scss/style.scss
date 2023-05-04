@@ -594,4 +594,35 @@
         margin-right: 30px;
     }
 }
+.about-brand{
+    margin-top: 214px;
+    &__flex{
+        display: flex;
+        align-items: center;
+    }
+    &__img{
+        padding-right: 100px;
+    }
+    &__info{
+        padding-right: 100px;
+    }
+    &__title{
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 46px;
+    }
+    &__btn{
+        width: 260px;
+        height: 68px;
+        background-color: $default;
+        display: block;
+        margin: 0 auto;
+        margin-top: 130px;
+        margin-bottom: 130px;
+        border: none;
+    }
+    &__link{
+        color: #fff;
+    }
+}
 
