@@ -445,25 +445,29 @@
 
 
 }
-.shop{
-    &__items{
+
+.shop {
+    &__items {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
     .mixitup-control-active {
         background: #000;
-        color: #fff;   
+        color: #fff;
     }
-    &__btn{
+
+    &__btn {
         width: 200px;
         height: 62px;
         background: #fff;
         margin-right: 10px;
         margin-bottom: 92px;
     }
-    
+
 }
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -472,7 +476,7 @@
     margin-bottom: 130px;
 
     &__list {
-        display: flex;        
+        display: flex;
     }
 
     &__arrow,
@@ -488,7 +492,7 @@
     &__list-num {
         color: #000;
         border: 1px solid #000;
-        padding: 9px 16px;        
+        padding: 9px 16px;
     }
 
     &__list-num--active {
@@ -496,42 +500,51 @@
         color: #fff;
     }
 }
-.shop-one{
+
+.shop-one {
     padding-bottom: 130px;
-    &__flex{
+
+    &__flex {
         display: flex;
         align-items: center;
         margin-bottom: 130px;
     }
-    &__img{
+
+    &__img {
         margin-right: 74px;
     }
-    &__price{
+
+    &__price {
         display: flex;
         align-items: center;
         margin-bottom: 59px;
     }
-    &__newPrice{
+
+    &__newPrice {
         margin-right: 29px;
         font-size: 40px;
         line-height: 44px;
         color: #998E78;
     }
-    &__oldPrice{
+
+    &__oldPrice {
         font-size: 30px;
         line-height: 33px;
         color: #9C9C9C;
         text-decoration: line-through;
     }
-    &__text{
+
+    &__text {
         margin-bottom: 34px;
         font-size: 20px;
         line-height: 28px;
     }
-    &__size{
+
+    &__size {
         margin-bottom: 59px;
     }
-    &__btn-size{
+
+    &__btn-size {
         margin-right: 14px;
         width: 45px;
         height: 45px;
@@ -539,11 +552,13 @@
         border: 1px solid #000;
         cursor: pointer;
     }
-    &__btn-size--active{
+
+    &__btn-size--active {
         background-color: #000;
         color: #fff;
     }
-    &__btn-color{
+
+    &__btn-color {
         width: 41px;
         height: 41px;
         border-radius: 100px;
@@ -551,23 +566,28 @@
         margin-bottom: 59px;
         cursor: pointer;
     }
-    &__btn-color--active{
+
+    &__btn-color--active {
         border: none;
     }
-    &__brown{
+
+    &__brown {
         background: #927876;
     }
-    &__gray{
+
+    &__gray {
         background-color: #D5D5D5;
     }
-    &__orange{
+
+    &__orange {
         background-color: #FD9696;
     }
-    &__yellow{
+
+    &__yellow {
         background-color: #FDC796;
     }
 
-    &__input{
+    &__input {
         width: 68px;
         height: 68px;
         text-align: center;
@@ -575,7 +595,8 @@
         line-height: 28px;
         margin-right: 11px;
     }
-    &__btn-bascket{
+
+    &__btn-bascket {
         width: 268px;
         height: 68px;
         font-weight: 400;
@@ -585,33 +606,41 @@
         background-color: $default;
         cursor: pointer;
     }
-    &__title{
+
+    &__title {
         font-size: 40px;
         line-height: 44px;
         margin-bottom: 67px;
     }
-    &__flex-item{
+
+    &__flex-item {
         margin-right: 30px;
     }
 }
-.about-brand{
+
+.about-brand {
     margin-top: 214px;
-    &__flex{
+
+    &__flex {
         display: flex;
         align-items: center;
     }
-    &__img{
+
+    &__img {
         padding-right: 100px;
     }
-    &__info{
+
+    &__info {
         padding-right: 100px;
     }
-    &__title{
+
+    &__title {
         font-size: 25px;
         line-height: 35px;
         margin-bottom: 46px;
     }
-    &__btn{
+
+    &__btn {
         width: 260px;
         height: 68px;
         background-color: $default;
@@ -621,8 +650,70 @@
         margin-bottom: 130px;
         border: none;
     }
-    &__link{
+
+    &__link {
         color: #fff;
     }
 }
 
+.map {
+    margin-bottom: 130px;
+}
+
+.contact {
+    &__flex {
+        display: flex;
+    }
+
+    &__flex-item {
+        padding-right: 98px;
+        margin-bottom: 130px;
+    }
+
+    &__flex-title {
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 19px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__form-title {
+        font-size: 25px;
+        line-height: 35px;
+        padding-bottom: 62px;
+    }
+
+    &__form-input,
+    &__form-area {
+        border: none;
+        border-bottom: 2px solid #000;
+        outline: none;
+        padding-bottom: 16px;
+        padding-top: 35px;
+    }
+
+    &__form-input {
+        width: 350px;
+    }
+
+    &__form-area {
+        width: 443px;
+        height: 134px;
+        resize: none;
+        margin-bottom: 35px;
+    }
+
+    &__form-btn {
+        width: 189px;
+        height: 68px;
+        background-color: $default;
+        display: block;
+        border: none;
+        color: #fff;
+    }
+}
