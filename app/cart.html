@@ -33,7 +33,7 @@
               <a class="header__menu-list-link" href="http://localhost:3000/about-brand.html">О бренде</a>
             </li>
             <li class="header__menu-list-item">
-              <a class="header__menu-list-link" href="#">Контакты</a>
+              <a class="header__menu-list-link" href="http://localhost:3000/contact.html">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -53,17 +53,82 @@
 
       <div class="breadcrumbs">
         <div class="container">
-          <h2 class="breadcrumbs__title"></h2>
+          <h2 class="breadcrumbs__title">Корзина</h2>
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="http://localhost:3000/">Главная</a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link breadcrumbs__link--active" href="#"></a>
+              <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Корзина</a>
             </li>
           </ul>
         </div>
       </div>
+
+      <section class="cart">
+        <div class="container">
+          <div class="cart__flex cart__flex-line">
+            <div class="cart__flex-item">
+              <h4 class="cart__flex-title">Товар</h4>
+            </div>
+            <div class="cart__flex-item">
+              <h4 class="cart__flex-title">Цена</h4>
+            </div>
+            <div class="cart__flex-item">
+              <h4 class="cart__flex-title">Количество</h4>
+            </div>
+            <div class="cart__flex-item">
+              <h4 class="cart__flex-title">Всего</h4>
+            </div>
+          </div>
+          <div class="cart__flex">
+            <div class="cart__flex-item">
+              <a class="cart__flex-link" href="#">
+                <img class="cart__flex-icon" src="images/delete.png" alt="icon">
+              </a>
+              <img class="cart__flex-img" src="images/content/cart-item.jpg" alt="image">
+              <p class="cart__flex-text">Футболка USA</p>
+            </div>
+            <div class="cart__flex-item">
+              <p class="cart__flex-text">$129</p>
+            </div>
+            <div class="cart__flex-item">
+              <input class="cart__flex-input" type="number">
+            </div>
+            <div class="cart__flex-item">
+              <p class="cart__flex-text">$129</p>
+            </div>
+          </div>
+          <div class="cart__flex">
+            <div class="cart__flex-coupon">
+              <input class="cart__flex-coupon-input" placeholder="Введите купон">
+              <button class="cart__flex-coupon-btn">
+                <a class="cart__flex-coupon-link" href="#">
+                  Применить купон
+                </a>
+              </button>
+              <button class="cart__flex-cart-btn">
+                <a class="cart__flex-cart-link" href="#">
+                  Обновить корзину
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="cart__total">
+            <p class="cart__total-text">Подытог: $129</p>
+            <div class="cart__total-flex">
+              <div class="cart__total-flex-item">
+                <h3 class="cart__total-flex-item-title">Итого: $129</h3>
+              </div>
+                <button class="cart__total-flex-btn">
+                  <a class="cart__total-flex-link" href="#">
+                    Оформить заказ
+                  </a>
+                </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </main>
 

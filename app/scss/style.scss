@@ -717,3 +717,98 @@
         color: #fff;
     }
 }
+
+.cart {
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__flex-line {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 26px;
+    }
+
+    &__flex-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__flex-title {
+        padding-left: 215px;
+    }
+
+    &__flex-link,
+    &__flex-img {
+        padding-right: 30px;
+        padding-top: 50px;
+    }
+
+    &__flex-input {
+        width: 30px;
+        height: 30px;
+    }
+    &__flex-coupon{
+        padding-top: 77px;
+    }
+
+    &__flex-coupon-input {
+        border: none;
+        border-bottom: 2px solid #000;
+        outline: none;
+        padding-bottom: 16px;
+        padding-top: 35px;
+    }
+
+    &__flex-coupon-link,
+    &__flex-cart-link {
+        color: $default;
+
+    }
+    &__flex-coupon-btn{
+        margin-left: 16px;
+    }
+
+    &__flex-coupon-btn,
+    &__flex-cart-btn {
+        padding: 22px 50px;
+        width: 248px;
+        height: 68px;
+        border: 1px solid $default;
+        background-color: #fff;
+    }
+
+    &__flex-cart-btn {
+        width: 254px;
+        margin-left: 337px;
+    }
+    &__total{
+        text-align: right;
+        padding-top: 94px;
+    }
+    &__total-text{
+        padding-right: 365px;
+        padding-bottom: 28px;
+    }
+    &__total-flex{
+        display: flex;
+        justify-content: right;
+        padding-right: 35px;
+    }
+    &__total-flex-item{
+        background: #F1EADC;
+        padding: 16px 51px 17px 31px;
+        margin-right: 15px;
+    }
+    &__total-flex-btn{
+        width: 236px;
+        height: 68px;
+        background-color: $default;
+        display: block;
+        border: none;
+        color: #fff;
+    }
+    &__total-flex-link{
+        color: #fff;
+    }
+}
