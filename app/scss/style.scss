@@ -886,3 +886,34 @@
 textarea{
     resize: none;
 }
+.success{
+    margin-bottom: 130px;
+    &__grid{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 488px 172px;
+        column-gap: 350px
+    }
+    &__flex{
+        display: flex;
+        align-items: center;
+    }
+    &__flex-img{
+        margin-right: 32px;
+    }
+    &__flex-tittle{
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 17px;
+    }
+    &__grid-btn{
+        padding: 22px 50px;
+        width: 275px;
+        height: 68px;
+        border: 1px solid $default;
+        background-color: #fff;
+    }
+    &__grid-link{
+        color: $default;
+    }
+}
